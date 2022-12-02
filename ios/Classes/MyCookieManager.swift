@@ -249,7 +249,7 @@ public class MyCookieManager: ChannelDelegate {
                 }
                 if domain == nil, let domainUrl = URL(string: originURL) {
                     if #available(iOS 16.0, *) {
-                        domain = domainUrl.host()
+                        domain = domainUrl.host
                     } else {
                         domain = domainUrl.host
                     }
@@ -283,7 +283,7 @@ public class MyCookieManager: ChannelDelegate {
                 }
                 if domain == nil, let domainUrl = URL(string: originURL) {
                     if #available(iOS 16.0, *) {
-                        domain = domainUrl.host()
+                        domain = domainUrl.host
                     } else {
                         domain = domainUrl.host
                     }
